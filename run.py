@@ -1,5 +1,5 @@
-a = 147
-print("a:", a)
+# a = 147
+# print("a:", a)
 
-message = "Hello World!"
-print(message)
+# message = "Hello World!"
+# print(message)

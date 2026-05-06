@@ -20,3 +20,14 @@ git push origin master
 git pull origin master
 
 ```
+
+## Pyhton Foundation:
+
+- Primitive Variables
+- Function
+- Object
+- Class
+- Class deep dive
+- Operation & Conditon
+- Loops
+- ...
