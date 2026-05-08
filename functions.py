@@ -28,3 +28,22 @@ print("result1:", result1)
 
 result2 = greeting("Madam")
 print("result2:", result2)
+
+
+print("========== Keyword & default arguments) ============")
+# DEFINE
+
+
+def give_greet(name, age=22):
+    print("give_greet is executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+# CALL
+# name= va age= kodni osonroq tushunish uchun hosil etildi
+result3 = give_greet(name="Justin", age=28)
+print("Result3:", result3)
+
+# bu yerda faqat "John" kiritilgan age esa yo'q, age ni result4 define default qiymatdan oladi
+result4 = give_greet(name="John")
+print("Result3:", result4)
