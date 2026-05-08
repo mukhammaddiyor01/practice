@@ -47,3 +47,19 @@ print("Result3:", result3)
 # bu yerda faqat "John" kiritilgan age esa yo'q, age ni result4 define default qiymatdan oladi
 result4 = give_greet(name="John")
 print("Result3:", result4)
+
+
+print("========== Scope ============")
+b = 100  # 3
+
+
+# Define
+# Scope - ning priority degan tushunchasi mavjud ular qiymatni qayerdan olish ketma-ketligi:
+
+def calculate(a):  # 2
+    c = a * b  # 1
+    print(f"the c value: {c}")
+
+
+# Call
+calculate(5)
