@@ -38,10 +38,12 @@ try:
     a = car_dict.speed
     result = car_dict["origin"]
     print("result:", result)
-except KeyError as err:
-    print("No origin state property found:", err)
-except AttributeError as err:   # No speed found: 'dict' object has no attribute 'speed'
-    print("No speed found:", err)
+
+# except (KeyError, AttributeError) as err: # bu bir necha xatolikni birga tekshirish
+except Exception as err:
+    print("General Error:", err)
+# except AttributeError as err:   # No speed found: 'dict' object has no attribute 'speed'
+#     print("No speed found:", err)
 else:
     print("Executed successfully")
 finally:
