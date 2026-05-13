@@ -6,6 +6,7 @@
 
 print("========  (2) INHERITANCE  ========")
 # Parent > Child
+# Parent only public & protected propertie(state + method) to children!
 
 
 class Animal():
@@ -15,7 +16,7 @@ class Animal():
     # constructor
     def __init__(self, voice):
         self.voice = voice
-        self.status = "Animal is Alive"
+        self._status = "Animal is Alive"
 
     # method
     def make_voice(self):
@@ -39,6 +40,9 @@ class Dog(Animal):  # Child
 
     def swim(self):
         print("Yes, I can swim")
+
+    def make_voice(self):
+        print(f"the{self.name} says {self.sound}")
 
 
 class Cat(Animal):  # Child
@@ -97,4 +101,29 @@ print(Animal.description)
 print(Dog.description)
 
 print(dog.voice, fish.voice)
-print(dog.status, fish.voice)
+print(cat._status, cat.voice)
+
+
+print("========  (3) POLIMORPHISM ========")
+
+print("--------")
+dog.make_voice()
+fish.make_voice()
+
+
+print("--------")
+# fish > fish> animal > Object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print(f"the result: {result}")
+
+
+# Fish > Animal > Objects
+
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+
+print("data", data1, data2)
