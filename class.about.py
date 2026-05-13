@@ -62,10 +62,10 @@ class Car():
     # state
     description = "This class makes cars"
 
-    # constructor
-    def __new__(cls, *args):    # bu yerda ko'zga ko'rinmasa ham doim __new__ syntax mavjud bo'ladi
-        print("*__new__*")
-        return super().__new__(cls)
+    # # constructor
+    # def __new__(cls, *args):    # bu yerda ko'zga ko'rinmasa ham doim __new__ syntax mavjud bo'ladi
+    #     print("*__new__*")
+    #     return super().__new__(cls)
 
     def __init__(self, name, year):
         self.name = name
