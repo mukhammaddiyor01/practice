@@ -38,8 +38,8 @@ class Dog(Animal):  # Child
     # def play(self):
     #     print("Yes, I can protect you!")
 
-    def swim(self):
-        print("Yes, I can swim")
+    def protect(self):
+        print("Yes, I can protect you!")
 
     def make_voice(self):
         print(f"the{self.name} says {self.sound}")
