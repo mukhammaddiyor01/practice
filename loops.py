@@ -58,3 +58,6 @@ while True:
 
     if x == 41:
         print(f"You number in {count} steps")
+        break
+    else:
+        print("Wrong, please find again!")
