@@ -46,3 +46,51 @@ print(id(c), id(d), id(e))
 # data = c is d
 print("c is d", c is d)
 print("e is c", e is c)
+
+
+print("====== (2) Condition ======")
+x = 15
+
+if x > 50:
+    print("case a")
+elif x > 10:
+    print("case b")
+else:
+    print("case c")
+
+
+print("====== (3) Logical Operators ======")
+
+age = 17
+# person = None
+
+# if age > 16:
+#     person = "adult"
+# else:
+#     person = "child"
+
+# print("person: ", person)
+
+# Ternary Operator
+person = "adult" if age > 18 else "minor"
+print("person:", person)
+
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = False
+
+if not is_student:  # not - bu yerda student bo'lmasa degan manoni anglatyapti
+    print("Welcome here, do you want to be student!")
+elif is_admin:
+    print("Please go to this office!")
+# elif is_guest or is_parent:
+# elif is_guest and is_parent:
+elif is_parent or is_guest:
+    print("Waiting room is over there!")
+else:
+    print("Other case")
+
+# or - bunda qatnashgan qiymatlarning hech bo'lasa biri true bo'lsa, mantiq True bo'ladi
+# and - bunda qatnashgan qiymatlarning barchasi True bo'lsa mantiq True bo'ladi aks holda, False bo'ladi®
