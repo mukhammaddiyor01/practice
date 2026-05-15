@@ -94,3 +94,18 @@ greeting("Hi", True, 10, name="John", age=22)
 # Terminal:
 # *agrs: ('Hi', True, 10)
 # **kwargs: {'name': 'John', 'age': 22}
+
+
+print("====== (3) zip ======")
+# zip - ning vazifasi ikki tuple ni birlashtirib, bir xil indexda joylashtirib beradi
+# va uni listga  taqdim etsak uni array ko'rinishida olib beradi, array-imiz ichida tuple larni hosil qilar ekan
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)  # terminal: zipped: <zip object at 0x107d33b00>
+result = list(zipped)
+print(f"the result: {result}")
+
+# terminal:
+# the result: [(1, 'a'), (2, 'b'), (3, 'c')]

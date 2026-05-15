@@ -1,6 +1,6 @@
 print("========= (2) Iterable object & RANGE ==========")
 # Iterable objectlar - takrorlanish hususiyatiga ega bo'lgan object hisoblanadi
-# Iterable objects : string dict tuple list range map filter
+# Iterable objects : string dict tuple zip list range map filter
 
 
 range_obj = range(3)  # [0, 3)
