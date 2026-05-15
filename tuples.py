@@ -66,8 +66,10 @@ calculate(0, 2, 300)
 print("-----")
 calculate(5, 7)
 
-
+print("-----")
 # **kwargs > dictionary
+
+
 def introduce(**kwargs):
     # **kwargs - bizga qachonki agrumentlarimiz soni noaniq bo'lsa ishlatar ekanmiz
     print(f"the type(**kwars) value: {type(kwargs)}")
@@ -78,3 +80,17 @@ def introduce(**kwargs):
 # CALL
 introduce(name="Justin", age=25)
 introduce(name="Shawn", age=35, single=True)
+
+
+# *args, **kwargs - bizga ham typle ni ham dictionary ni unpack qilib berar ekan
+def greeting(*args, **kwargs):
+    print("*agrs:", args)
+    print("**kwargs:", kwargs)
+
+
+# Call
+greeting("Hi", True, 10, name="John", age=22)
+
+# Terminal:
+# *agrs: ('Hi', True, 10)
+# **kwargs: {'name': 'John', 'age': 22}
