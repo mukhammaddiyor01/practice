@@ -32,3 +32,36 @@ tuple_obj = ("MIT", 100, True, None)
 print(animals[0])
 # animals[0] = "bird"  # bu holatda TypeError beradi chunki qiymatlarini o'zgartira olmaymizß
 # print(animals)
+
+# try avoid this
+people = "Andrew", "John"
+animals = "dog",
+
+
+print("====== (2) Unpaacking arguments ======")
+groups = ["MIT", "FLEXY", "DEVEX", "MG"]
+(x, y, *z) = groups
+# *z - bu usulda biz va boshqalar degan manoni tushunamiz yani bir necha qiymatni o'z cichiga oladi
+# the x: y: {'FLEXY'}
+# z: ['DEVEX', 'MG']
+print(f"the x:", {x} and "y:", {y})
+print("z:", z)  # list
+
+
+# *args > tuple
+def calculate(*args):  # biz *args - ni qancha qiymat qabul qilishimizni aniq bilmaganimizda ishlatamiz. qiymat noaniq bo'lsa tuple ga wrap qilamiz ekan
+    print("*args", args)
+    total = 1
+    for x in args:
+        total *= x
+    # print(f"the type(args) value: {type(args)}")
+    print(f"the total value: {total}")
+    return total
+
+
+# CALL
+calculate(1, 7, 2, 3)
+print("-----")
+calculate(0, 2, 300)
+print("-----")
+calculate(5, 7)
