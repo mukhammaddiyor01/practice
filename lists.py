@@ -124,7 +124,7 @@ def calculate(x, y): return x * y
 
 result = calculate(3, 5)
 print("result:", result)
-
+# terminal: result: 15
 
 people = [
     ("Robert", 20),
@@ -139,6 +139,10 @@ print("people(1):", people)
 # sort by age via lambda
 people.sort(key=lambda person: person[1])
 print("people(2)", people)
+
+# terminal:
+# people(1): [('Ali', 40), ('Joseph', 25), ('Michael', 30), ('Robert', 20), ('Steve', 19)]
+# people(2) [('Steve', 19), ('Robert', 20), ('Joseph', 25), ('Michael', 30), ('Ali', 40)]
 
 
 print("====== (4) enumerate, map and filter ======")
@@ -184,9 +188,13 @@ print("new_car", new_cars)
 
 result_map = map(lambda car: car[0], cars)
 print(f"result1: {result_map} and type: {type(result_map)}")
+# terminal:
+# result1: <map object at 0x1098bfb00> and type: <class 'map'>
 
 new_cars = list(result1)
 print("new_cars(2)", new_cars)
+# terminal:
+# new_cars(2) ['c']
 
 
 print("---------")
