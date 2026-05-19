@@ -4,19 +4,20 @@
     (3) Debugging
 '''
 
+from PIL import Image
 from turtle import Screen, Turtle, done
 import turtle
 print("====== (1) Python Packages & Core Package ======")
 ''' Python Packages/Modules: Core, File and External '''
 # Core Packages > https://docs.pyhton.org/3/library
 
-# Core package
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(5)
-t.circle(100)
+# # Core package
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.speed(5)
+# t.circle(100)
 
-turtle.done()
+# turtle.done()
 
 
 print("----")
@@ -33,3 +34,18 @@ with open("material/message.txt", "r") as your_file:
     print("your_content:", your_content)
 
 print("DONE")
+
+
+print("====== (2) Package Manager & External Package ======")
+''' Package manager > pip
+    Python > pip pipenv
+    Nodejs > npm yarn
+    PHP > composer
+    MacOS > brew
+'''
+# External package site:> https://pypi.org
+
+with Image.open("material/images.jpeg") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
