@@ -35,5 +35,14 @@ git pull origin master
 - List
 - Array
 - Comprehension
-- Debugging
+- Packages & Debugging
 - ...
+
+# Pip commands:
+
+macOs pip3 | windows pip
+
+pip list
+pip intsall pillow
+pip uninstall pillow
+pip show pillow

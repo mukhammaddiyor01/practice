@@ -49,3 +49,6 @@ with Image.open("material/images.jpeg") as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save("material/sample.png")
+
+
+print("====== (3) Debugging ======")
