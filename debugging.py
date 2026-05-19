@@ -11,13 +11,13 @@ print("====== (1) Python Packages & Core Package ======")
 ''' Python Packages/Modules: Core, File and External '''
 # Core Packages > https://docs.pyhton.org/3/library
 
-# # Core package
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(5)
-# t.circle(100)
+# Core package
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(5)
+t.circle(100)
 
-# turtle.done()
+turtle.done()
 
 
 print("----")
@@ -52,3 +52,15 @@ with Image.open("material/images.jpeg") as img_obj:
 
 
 print("====== (3) Debugging ======")
+
+
+def get_summary(*args):  # Define
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount  # find the bug via debugging
+
+
+test = 100
+result = get_summary(1, 2, 3, 4, 5)  # Call
+print("result:", result)
